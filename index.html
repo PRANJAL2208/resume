@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRANJAL SHARMA -PORTFOLIO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 88, 114);
+            color: black;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100px;
+            background-color: rgb(148, 181, 203);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+
+        }
+
+        nav ul li a:hover {
+            color: rgb(85, 255, 218);
+            font-size: 1.01rem;
+
+        }
+
+
+        .left {
+            font-size: 3rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 30px 0;
+
+        }
+
+        .firstsection>div {
+            width: 25%;
+
+        }
+
+        .leftsection {
+            font-size: 3rem;
+        }
+
+        .leftsection .btn {
+            padding: 12px;
+            background-color: rgb(0, 88, 114);
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .rightsection img {
+            background-color: antiquewhite;
+            width: 100%;
+            border: 20px solid rgb(17, 2, 76);
+        }
+
+        .purple {
+            color: rgb(255, 255, 255)
+        }
+
+        .text-gray {
+            color: aqua;
+        }
+
+        #element {
+            color: rgb(255, 255, 255);
+        }
+
+        .secondsection h1 {
+            text-align: center;
+            font-size: 3rem;
+        }
+
+        .secondsection span {
+            margin: 50px;
+        }
+
+        .secondsection {
+            margin-bottom: 25%;
+
+
+        }
+
+        .secondsection .box {
+            background: white;
+            width: 85vw;
+            height: 2px;
+            margin: 60px;
+            display: flex;
+
+        }
+
+        .secondsection .vertical {
+            height: 84px;
+            width: 2px;
+            background: white;
+            margin: 0 6vw;
+
+
+        }
+
+        .image-top {
+            width: 50px;
+            position: relative;
+            top: -56px;
+            left: -20px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+            font-size: 14px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 150px;
+            font-size: 9px;
+
+        }
+
+        .Aboutrightsection {
+            font-size: 2rem;
+            color: rgb(255, 255, 255);
+        }
+
+        .Aboutrightsection p {
+            color: rgb(167, 167, 167);
+        }
+
+        .Aboutleftsection img {
+            background-color: antiquewhite;
+            width: 100%;
+            border: 20px solid rgb(17, 0, 82);
+        }
+
+        .About>div {
+            width: 45%;
+
+        }
+
+        .About div {
+            margin: 20px;
+        }
+
+        .About {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 30px 0;
+            background-color: #022f40;
+
+        }
+
+        .qualities {
+            display: flex;
+            align-items: center;
+            background-color: #011833;
+            height: 800px;
+        }
+
+        .qualities h1 {
+            font-size: 3rem;
+            color: #ff4d01;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+
+        .qualities h2 {
+            color: rgb(255, 2, 2);
+            margin: 30px;
+        }
+
+        .qualities h4 {
+            color: rgb(238, 135, 0);
+        }
+
+        .qualities li {
+            color: rgb(250, 250, 243);
+        }
+
+        .Contactme h1 {
+            font-size: 4rem;
+            color: rgb(252, 252, 252);
+
+        }
+
+        .Contactme h2 {
+            font-size: 2rem;
+            color: gray;
+            margin: 50px;
+        }
+
+        .Contactme a {
+            color: gray;
+        }
+
+        .Contactme img {
+
+            align-items: center;
+            width: 4rem;
+            height: 4rem;
+            font-size: 2rem;
+            background: transparent;
+            border: .2rem solid rgb(109, 105, 105);
+            margin: 50px;
+
+
+        }
+
+        .Contactme {
+            background-color: #182535;
+            justify-content: space-around;
+            align-items: center;
+            
+
+        }
+        .Contactme div{
+            margin: 0 20px ;
+        }
+
+        .Contactme ul {
+            display: inline-flex;
+            justify-content: center;
+
+        }
+
+
+        footer {
+            background-color: rgb(206, 196, 255);
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+
+        }
+
+        .footer UL {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 250px;
+        }
+
+        .btn:hover {
+            color: cyan;
+            background-color: black;
+            font-size: 18px;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+        }
+
+
+
+
+        @media screen and (max-width: 1400px) {
+            .box {
+                flex-direction: column;
+            }
+
+            .secondsection {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 1080px;
+            }
+
+            .secondsection .vertical {
+                height: unset;
+
+            }
+
+            .vertical-title,
+            .vertical-desc {
+                left: 45px;
+            }
+
+            .secondsection .box {
+                width: 50vw;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            .firstsection {
+                flex-direction: column-reverse
+            }
+
+            .leftsection {
+                width: 100% !important;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .rightsection {
+                width: 72% !important;
+                display: flex;
+                justify-content: center;
+            }
+
+            .rightsection img {
+                width: 45vw;
+                margin-bottom: 73px;
+            }
+
+            .About {
+                flex-direction: column;
+            }
+
+            .Aboutrightsection {
+                width: 100% !important;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .Aboutleftsection {
+                width: 72% !important;
+                display: flex;
+                justify-content: center;
+            }
+
+
+            .Aboutleftsection img {
+                width: 45vw;
+                margin-bottom: 73px;
+            }
+
+            .About div {
+                margin: 20px;
+            }
+
+
+            .image-top {
+                top: 133px;
+            }
+
+
+
+            body {
+                min-width: fit-content;
+            }
+
+        }
+
+        main hr {
+            border: 0;
+            background-color: #5dd1ff;
+            height: 10px;
+            margin: 50px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">PORTFOLIO </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#Home<">Home</li></a>
+                    <li><a href="#About">About</li></a>
+                    <li><a href="#qualities">QUALITIES</li></a>
+                    <li><a href="#secondsection">Past Projects</li></a>
+                    <li><a href="#Contactme">Contact Me</li></a>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection ">
+                <div>HI, MY NAME IS <span class="purple">PRANJAL SHARMA</span></div>
+                <div>AND I AM A PASSIONATE </div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <a href="PRANJAL SHARMA resume.pdf"> <button class="btn">DOWNLOAD RESUME</button></a>
+                </div>
+            </div>
+            <div class="rightsection ">
+                <img src="profile.jpg" alt="">
+            </div>
+
+        </section>
+        <hr>
+        <section class="secondsection" id="secondsection">
+            <SPAN class="text-gray">What I have done so far</SPAN>
+            <h1>WORK EXPERIENCE AND PROJECT </h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="drdo.jpeg" alt="">
+                    <div class="vertical-title">
+                        QUANTUM MACHINE LEARNING, under DRDO
+                    </div>
+                    <div class="vertical-desc">
+                        Currently working on machine learning aspect of Quantum Computing
+                        i.e Quantum machine learning and applying Qml algorithms such as
+                        VQC, QSVC, QNN,QKNN etc, on breast cancer dataset
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="cancer.jpeg" alt="">
+                    <div class="vertical-title">
+                        MACHINE LEARNING PROJECT
+                    </div>
+                    <div class="vertical-desc">
+                        SKIN CANCER DETECTION AND CLASSIFICATION
+                        Using machine learning and deep learning algorithms performed exploratory datat analysis, data
+                        visualization, applied sequential model, KNN and random forest algorithms.
+
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="developer.png" alt="">
+                    <div class="vertical-title">
+                        AIR QUALITY INDEX WEBSITE
+                    </div>
+                    <div class="vertical-desc">
+                        A website displaying Air Quality Index (AQI) of the selected
+                        city.
+                        Technology: Website
+                        HTML, CSS, JAVASCRIPT used
+
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="doctor.png" alt="">
+                    <div class="vertical-title">
+                        MY DOCTOR APP
+                    </div>
+                    <div class="vertical-desc">
+                        Application Name : Doctor App
+                        Technology : Android Application
+                        Frontend language : Kotlin
+                        Design language : XML
+                        Architecture: MVVM Architecture model.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="game.png" alt="">
+                    <div class="vertical-title">
+                        GAME DEVELOPMENT
+                    </div>
+                    <div class="vertical-desc">
+                        PACMAN
+                        developed using C++ and SFML
+                        UNICORN GAME
+                        developed using SCRATCH.
+
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="igdtuw.jpeg" alt="">
+                    <div class="vertical-title">
+                        EDUCATION HISTORY - currently
+                    </div>
+                    <div class="vertical-desc">
+                        
+                        Bachelor of Technology - BTech,
+                        Computer science and artificial intelligence
+                        INDIRA GANDHI DELHI TECHNICAL UNIVERSITY FOR WOMEN
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="asn.png" alt="">
+                    <div class="vertical-title">
+                        EDUCATION HISTORY - schooling
+                    </div>
+                    <div class="vertical-desc">
+                        ASN SR SEC SCHOOL
+                        Sahakarita Marg, Mayur Vihar Phase 1 Extension, Mayur Vihar, New Delhi, Delhi 110091
+                        class : nursery to 12th
+                        12th and 11th : PCMB with PHYSICAL EDUCATION + ENGLISH
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <hr>
+        <section class="About" id="About">
+            <div class="Aboutleftsection ">
+                <img src="profile.jpg" alt="">
+            </div>
+            </div>
+            <div class="Aboutrightsection ">
+                <h1>ABOUT ME</h1>
+                <div>
+                    <p>Studying Computer science with
+                        artificial intelligence under the
+                        guidance of professors at Indira
+                        Gandhi Institute of Technology for
+                        women. </p>
+
+                    <p>Innovative and enthusiastic computer
+                        science student with a passion for
+                        new technology and science. Looking
+                        for a career role where I can learn and
+                        grow as well as enjoy the job.</p>
+                </div>
+            </div>
+        </section>
+        <section class="qualities" id="qualities">
+            <h1>ACHIEVEMENTS and EXTRACURRICULAR ACTIVITY</h1>
+            <div>
+                <h2>ACHIEVEMENTS</h2>
+                <p>
+                    <li>12th (PCMB) MARKS = 90% IN BEST 4</li>
+                    <li>JEE MAINS SCORE = 97.56</li>
+                    <li>BAGGED "SPECIAL MENTION OF UNICEF " AND "SPECIAL MENTION OF UNODC" IN IMUN 58.0
+                        AND 59.0 CONSEQUTIVELY.</li>
+                    <li>1ST PRIZE IN ZONAL MUSIC COMPETITION</li>
+
+
+                </p>
+                <h2>EXTRACURRICULAR ACTIVITY</h2>
+                <h4>INTERNATIONAL MUN (MODEL UNITED NATIONS)</h4>
+                <p>
+                    <li>Participated in many MUNs from online to offline, school level, nationwide as well as
+                        international.</li>
+                    <li>MUNs portray UN conferences to spread information about them and prepare leaders for the future
+                        and give them the perspective of countries all over the world.</li>
+
+
+                </p>
+                <h4>MUSIC AND DANCE</h4>
+                <p>
+                    <li>Participated in many zonal and district level dance competitions for dance and music. </li>
+                </p>
+                <h4>GAMES</h4>
+                <p>
+                    <li>BASKETBALL :Played for 4 years under the guidance of a coach at YAMUNA SPORTS
+                        COMPLEX.</li>
+                    <li>BADMINTON</li>
+                </p>
+            </div>
+        </section>
+        <section class="Contactme" id="Contactme">
+            <h1>CONTACT DETAILS</h1>
+            <div>
+                <ul><img src="mobile-solid-24.png" alt="">
+                    <h2>MOBILE NUMBER</h2>
+                    <h4>8527827961</h4>
+
+                    <img src="envelope-solid-24.png" alt="">
+                    <h2>EMAIL</h2>
+                    <h4>pranjal.8022@gmail.com</h4>
+                    <img src="linkedin-square-logo-24.png" alt="">
+                    <h2><a href="https://www.linkedin.com/in/pranjal-sharma-49b881211">LINKEDIN</a></h2>
+                    <img src="github-logo-24.png" alt="">
+                    <h2><a href="https://github.com/PRANJAL2208">GITHUB</a></h2>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer1">
+                <h3>PRANJAL'S DEVELOPER PORTFOLIO</h3>
+            </div>
+            <div class="footer2">
+                <UL>
+                    <LI>HOME</LI>
+                    <LI>HOME</LI>
+                    <LI>HOME</LI>
+                    <LI>HOME</LI>
+                    <LI>HOME</LI>
+                </UL>
+            </div>
+            <div class="footer3">
+                <UL>
+                    <LI>HOME</LI>
+                    <LI>HOME</LI>
+                    <LI>HOME</LI>
+                    <LI>HOME</LI>
+                    <LI>HOME</LI>
+                </UL>
+            </div>
+            <div class="footer4">
+                <UL>
+                    <LI>HOME</LI>
+                    <LI>HOME</LI>
+                    <LI>HOME</LI>
+                    <LI>HOME</LI>
+                    <LI>HOME</LI>
+                </UL>
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copyright &#169; www.pranjalportfolio.com | All rights reserved.
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: [' WEB DEVELOPER.', 'COMPUTER SCIENCE STUDENT.', 'AI ENTHUSIAST.'],
+            typeSpeed: 50,
+            loop: true
+        });
+    </script>
+</body>
+
+
+</html>
